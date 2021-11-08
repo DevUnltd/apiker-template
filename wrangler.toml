@@ -1,0 +1,23 @@
+name = "apiker-demo"
+type = "javascript"
+account_id = "YOUR_CLOUDFLARE_ACCOUNT_ID"
+workers_dev = true
+# To use your own route, set worker_dev to false and fill out the following
+#route = "your.domain.com/*"
+#zone_id = "YOUR_ZONE_ID"
+compatibility_date = "2021-10-12"
+
+[build]
+command = "npm install && npm run build"
+
+[build.upload]
+# The "modules" upload format is required for all projects that export a Durable Object class.
+format = "modules"
+main = "./shim.mjs"
+
+[durable_objects]
+bindings = [{name = "API", class_name = "API"}]
+
+[[migrations]]
+tag = "v1" # Should be unique for each entry
+new_classes = ["API"]
