@@ -1,3 +1,0 @@
-{
-  "/users/:id/counter": "MyController.getUserCounter"
-}

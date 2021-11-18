@@ -1,19 +1,14 @@
-import "regenerator-runtime/runtime";
-import API from "./API";
-exports.API = API;
+import { apiker } from "apiker";
+import { getUserCounter } from "./controllers/counter";
+import objects from "./objects.json";
 
-exports.handlers = {
-  async fetch(request, env) {
-    try {
-      return await handleRequest(request, env);
-    } catch (e) {
-      return new Response(e.message);
-    }
-  }
+const routes = {
+  "/users/:id/counter": getUserCounter
 };
 
-async function handleRequest(request, env) {
-  const id = env.API.idFromName("A");
-  const obj = env.API.get(id);
-  return obj.fetch(request.url);
-}
+apiker.init({
+  routes,
+  objects,
+  exports,
+  auth: true
+});

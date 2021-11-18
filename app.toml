@@ -1,3 +1,8 @@
+# ----------------------------------------------------------------------------------
+# App.toml
+# NOTE: Can be committed. Do not add secrets to this file. Use .env for this purpose.
+# ----------------------------------------------------------------------------------
+
 name = "apiker-demo"
 type = "javascript"
 account_id = "YOUR_CLOUDFLARE_ACCOUNT_ID"
@@ -14,10 +19,3 @@ command = "npm install && npm run build"
 # The "modules" upload format is required for all projects that export a Durable Object class.
 format = "modules"
 main = "./shim.mjs"
-
-[durable_objects]
-bindings = [{name = "API", class_name = "API"}]
-
-[[migrations]]
-tag = "v1" # Should be unique for each entry
-new_classes = ["API"]

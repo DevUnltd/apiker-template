@@ -1,9 +1,9 @@
-const CopyPlugin = require("copy-webpack-plugin");
 const PrettierPlugin = require("prettier-webpack-plugin");
+const PostBuild = require("./scripts/PostBuild");
 
 module.exports = {
   entry: "./src/index.js",
-  target: "web",
+  target: "node",
   mode: "development",
   devtool: "source-map",
   output: {
@@ -26,10 +26,8 @@ module.exports = {
     ]
   },
   plugins: [
-    new PrettierPlugin(),
-    new CopyPlugin({
-      patterns: [{ from: "src/shim.mjs", to: "shim.mjs" }],
-    }),
+    new PostBuild(),
+    new PrettierPlugin()
   ],
   resolve: {
     extensions: [".ts", ".js", ".mjs", ".json"]
