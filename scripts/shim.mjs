@@ -4,5 +4,5 @@
 // ----------------------------------------------------------------------
 
 import bundle from "./index.js";
-const { handlers, Common, Auth, Users, Codes, Tokens } = bundle;
-export { handlers as default, Common, Auth, Users, Codes, Tokens };
+const { handlers, Common, Users, EmailToUUID } = bundle;
+export { handlers as default, Common, Users, EmailToUUID };
