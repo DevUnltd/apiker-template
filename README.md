@@ -2,6 +2,13 @@
 
 # 👷 Apiker Demo
 
+## 📦 Install
+To create a project based on this demo:
+
+```
+npx apiker your-site-name
+```
+
 ## Note: You must use [wrangler](https://developers.cloudflare.com/workers/cli-wrangler/install-update) 1.19.3 or newer to use this template.
 
 ## Please read the [Durable Object documentation](https://developers.cloudflare.com/workers/learning/using-durable-objects) before using this template.
