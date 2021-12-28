@@ -9,6 +9,5 @@ const routes = {
 apiker.init({
   routes,
   objects,
-  exports,
-  auth: false
+  exports
 });
