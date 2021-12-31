@@ -19,7 +19,7 @@
     "@babel/plugin-transform-runtime": "^7.16.5",
     "@babel/plugin-transform-typescript": "^7.15.8",
     "@babel/polyfill": "^7.12.1",
-    "@babel/preset-env": "^7.16.5",
+    "@babel/preset-env": "^7.16.7",
     "@iarna/toml": "^2.2.5",
     "@types/jest": "^27.0.3",
     "@typescript-eslint/eslint-plugin": "^4.32.0",
