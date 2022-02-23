@@ -21,7 +21,7 @@
     "@babel/polyfill": "^7.12.1",
     "@babel/preset-env": "^7.16.11",
     "@iarna/toml": "^2.2.5",
-    "@types/jest": "^27.4.0",
+    "@types/jest": "^27.4.1",
     "@typescript-eslint/eslint-plugin": "^5.12.1",
     "@typescript-eslint/parser": "^5.11.0",
     "apiker": "1.5.21",
