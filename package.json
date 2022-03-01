@@ -23,7 +23,7 @@
     "@iarna/toml": "^2.2.5",
     "@types/jest": "^27.4.0",
     "@typescript-eslint/eslint-plugin": "^5.12.1",
-    "@typescript-eslint/parser": "^5.11.0",
+    "@typescript-eslint/parser": "^5.13.0",
     "apiker": "1.5.24",
     "babel-eslint": "^10.1.0",
     "babel-loader": "^8.2.2",
