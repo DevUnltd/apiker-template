@@ -11,7 +11,7 @@ apiker.init({
   objects,
   exports,
   // Make an object instance per IP for the following objects.
-  // This helps with performance as the requests won't go to a single instance (Recommended)
+  // This helps with performance as the requests won't go to a single "default" instance (Recommended)
   objectStateMapping: {
     RateLimit: OBMT.SIGNEDIP,
     Logs: OBMT.SIGNEDIP,
