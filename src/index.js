@@ -9,5 +9,11 @@ const routes = {
 apiker.init({
   routes,
   objects,
-  exports
+  exports,
+  // Make an object instance per IP. This helps performance (Recommended)
+  objectStateMapping: {
+    RateLimit: OBMT.SIGNEDIP,
+    Logs: OBMT.SIGNEDIP,
+    Bans: OBMT.SIGNEDIP
+  }
 });
