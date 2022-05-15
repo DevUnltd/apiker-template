@@ -14,7 +14,8 @@ module.exports = {
     sourceMapFilename: "index.js.map",
   },
   optimization: {
-    minimize: true,
+    // Disable minification to facilitate debugging
+    minimize: false,
   },
   module: {
     rules: [
