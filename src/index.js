@@ -1,4 +1,4 @@
-import { apiker } from "apiker";
+import { apiker, OBMT } from "apiker";
 import { getUserCounter } from "./controllers/counter";
 import objects from "./objects.json";
 
