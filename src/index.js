@@ -1,4 +1,4 @@
-import { apiker, OBMT } from "apiker";
+import { apiker } from "apiker";
 import { getUserCounter } from "./controllers/counter";
 import objects from "./objects.json";
 
@@ -9,12 +9,5 @@ const routes = {
 apiker.init({
   routes,
   objects,
-  exports,
-  // Make an object instance per IP for the following objects.
-  // This helps with performance as the requests won't go to a single "default" instance (Recommended)
-  objectStateMapping: {
-    RateLimit: OBMT.SIGNEDIP,
-    Logs: OBMT.SIGNEDIP,
-    Bans: OBMT.SIGNEDIP
-  }
+  exports
 });
