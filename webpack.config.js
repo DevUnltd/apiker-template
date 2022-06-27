@@ -1,4 +1,3 @@
-const PrettierPlugin = require("prettier-webpack-plugin");
 const PostBuild = require("apiker/dist/plugins/PostBuild");
 const dotenv = require("dotenv");
 const TOML = require("@iarna/toml");
@@ -29,8 +28,7 @@ module.exports = {
     ]
   },
   plugins: [
-    new PostBuild(__dirname, TOML, dotenv),
-    new PrettierPlugin()
+    new PostBuild(__dirname, TOML, dotenv)
   ],
   resolve: {
     extensions: [".ts", ".js", ".mjs", ".json"]
