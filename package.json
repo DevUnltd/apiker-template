@@ -8,9 +8,10 @@
     "test": "jest --silent",
     "coverage": "npm run test -- --coverage",
     "format": "prettier --write '**/*.{js,css,json,md}'",
-    "tail": "wrangler tail --format=pretty",
     "wrangler": "wrangler",
-    "publish": "npm run build && npm run wrangler publish"
+    "login": "npm run wrangler login",
+    "publish": "npm run build && npm run wrangler publish",
+    "tail": "wrangler tail --format=pretty"
   },
   "author": "Francisco Hodge <hello@franciscohodge.com>",
   "license": "MIT",
