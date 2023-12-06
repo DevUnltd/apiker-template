@@ -2,6 +2,8 @@
 
 # 👷 Apiker Demo
 
+This is the template used when you create an Apiker project, as shown in the "Install" instructions below.
+
 ## 📦 Install
 To create a project based on this demo:
 
