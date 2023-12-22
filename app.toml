@@ -4,12 +4,51 @@
 # ----------------------------------------------------------------------------------
 
 name = "apiker-demo"
-account_id = "YOUR_CLOUDFLARE_ACCOUNT_ID"
-workers_dev = true
+account_id = "bc2eda78f9c47c829244fe7e14d72e50"
+route = "apiker-demo.volted.co/*"
+workers_dev = false
+compatibility_date = "2021-10-12"
 main = "./dist/shim.mjs"
-compatibility_date = "2023-06-17"
-# To use your own route, set workers_dev to false and fill out the following
-#route = "your.domain.com/*"
 
 [build]
 command = "npm install && npm run build"
+
+[[durable_objects.bindings]]
+name = "Common"
+class_name = "Common"
+
+[[durable_objects.bindings]]
+name = "Users"
+class_name = "Users"
+
+[[durable_objects.bindings]]
+name = "EmailToUUID"
+class_name = "EmailToUUID"
+
+[[durable_objects.bindings]]
+name = "RateLimit"
+class_name = "RateLimit"
+
+[[durable_objects.bindings]]
+name = "Logs"
+class_name = "Logs"
+
+[[durable_objects.bindings]]
+name = "Bans"
+class_name = "Bans"
+
+[[durable_objects.bindings]]
+name = "CounterUser"
+class_name = "CounterUser"
+
+[[migrations]]
+tag = "33b309"
+new_classes = [ "Common", "Users", "EmailToUUID" ]
+
+[[migrations]]
+tag = "c124d4"
+new_classes = [ "RateLimit", "Logs", "Bans" ]
+
+[[migrations]]
+tag = "6e8540"
+new_classes = [ "CounterUser" ]
