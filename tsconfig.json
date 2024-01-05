@@ -2,7 +2,7 @@
   "compilerOptions": {
     "noImplicitAny": false,
     "outDir": "dist/types",
-    "module": "esnext",
+    "module": "commonjs",
     "target": "es5",
     "allowJs": true,
     "sourceMap": true,

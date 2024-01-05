@@ -8,6 +8,7 @@ account_id = "YOUR_CLOUDFLARE_ACCOUNT_ID"
 workers_dev = true
 main = "./dist/shim.mjs"
 compatibility_date = "2023-06-17"
+node_compat = true
 # To use your own route, set workers_dev to false and fill out the following
 #route = "your.domain.com/*"
 
