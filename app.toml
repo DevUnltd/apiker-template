@@ -8,6 +8,7 @@ account_id = "bc2eda78f9c47c829244fe7e14d72e50"
 route = "apiker-demo.volted.co/*"
 workers_dev = false
 compatibility_date = "2021-10-12"
+node_compat = true
 main = "./dist/shim.mjs"
 
 [build]

@@ -14,11 +14,11 @@ apiker.init({
     limitRequestsPerMinute: 30
   },
   debug: true,
-  adminPanel: false,
+  adminPanel: true,
   objectStateMapping: {
     CounterUser: OBMT.SIGNEDIP,
     RateLimit: OBMT.SIGNEDIP,
     Logs: OBMT.SIGNEDIP,
-    Bans: OBMT.SIGNEDIP
+    Bans: "userId"
   }
 });
