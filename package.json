@@ -10,6 +10,7 @@
     "format": "prettier --write '**/*.{js,css,json,md}'",
     "wrangler": "wrangler",
     "login": "npm run wrangler login",
+    "logout": "npm run wrangler logout",
     "publish": "npm run build && npm run wrangler publish",
     "tail": "wrangler tail --format=pretty"
   },
