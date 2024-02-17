@@ -14,7 +14,12 @@ apiker.init({
     limitRequestsPerMinute: 30
   },
   debug: true,
-  adminPanel: true,
+  email: {
+    name: "Admin",
+    senderEmail: "admin@apiker-demo.volted.co"
+  },
+  authRoutes: false,
+  adminPanel: false,
   objectStateMapping: {
     CounterUser: OBMT.SIGNEDIP,
     RateLimit: OBMT.SIGNEDIP,
